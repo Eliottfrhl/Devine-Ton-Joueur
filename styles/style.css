@@ -1,13 +1,15 @@
 html {
     font-size: 10px;
-    font-family: 'Roboto Mono';
-  }
+    font-family: 'Playfair Display';
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #0039ff 100%);    
+      }
   
   
   h1 {
     font-size: 60px;
     text-align: center;
-    color: #ff0000
+    color: #24458d
   }
   
   p {
@@ -16,15 +18,10 @@ html {
     letter-spacing: 1px;
   }
   
-  
-  html {
-    background-color: #000000;
-  }
-  
   body {
     width: 650px;
     margin: 0 auto;
-    background-color: #a3a19f;
+    background-color: #c75910;
     padding: 0 20px 20px 20px;
     border: 5px solid black;
   }
@@ -52,3 +49,5 @@ html {
     clear: both;
     display: table;
   } 
+
+  
