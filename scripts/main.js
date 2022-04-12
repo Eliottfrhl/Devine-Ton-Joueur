@@ -1,0 +1,59 @@
+let Data = { 'CABOCHARD': ['FR', 'KC', 'LFL', 'TOP'],'113' : ['TR','KC','LFL','JGL'], 'SAKEN' : ['FR','KC','LFL','MID'], 'REKKLES' : ['SE','KC','LFL','ADC'], 'HANTERA' : ['FR','KC','LFL','SUP'], 'DJOKO' : ['FR','SLY','LFL','JGL'], 'STEELBACK' : ['FR','SLY','LFL','SUP'], 'EIKA' : ['FR','LDLC','LFL','MID'], 'VETHEO' : ['FR','MSF','LEC','MID'], 'ODOAMNE' : ['ROU','RGE','LEC','TOP'],'TOUCOUILLE' : ['FR','FLY','LCS','MID'],'CINKROFF' : ['POL','BDS','LEC','JGL'],'FAKER' : ['KOR','T1','LCK','MID'],'KERIA' : ['KOR','T1','LCK','SUP'],'CZEKOLAD' : ['POL','GW','LFL','MID'],'RONALDO' : ['ROU','GO','LFL','MID'], 'RANGJUN' : ['KOR','ME','LFL','MID'],'CZAJEK' : ['POL','MSFP','LFL','MID'],'SCARLET' : ['AUT','SLY','LFL','MID'],'XICO' : ['PRT','BDSA','LFL','MID'],'PENG' : ['SE','OPL','LFL','MID'],'DIPLEX' : ['DEU','VITB','LFL','MID'],'BADLULU' : ['FR','ME','LFL','TOP'], 'MELONIK' : ['POL','GW','LFL','TOP'], 'RAGNER' : ['TR','LDLC','LFL','TOP'], 'VIZICSACSI' : ['HUN','GO','LFL','TOP'], 'IRRELEVANT' : ['DEU','MSFP','LFL','TOP'],'KIO' : ['SVK','SLY','LFL','TOP'], 'SZYGENDA' : ['DNK','VITB','LFL','TOP']}
+;
+let Joueurs = ['CABOCHARD','113', 'SAKEN','REKKLES', 'HANTERA', 'DJOKO', 'STEELBACK', 'EIKA','VETHEO', 'ODOAMNE','TOUCOUILLE','CINKROFF','FAKER','KERIA','CZEKOLAD','RONALDO', 'RANGJUN','CZAJEK','SCARLET','XICO','PENG','DIPLEX','BADLULU', 'MELONIK', 'RAGNER', 'VIZICSACSI', 'IRRELEVANT','KIO', 'SZYGENDA'];
+
+var myTitle = document.getElementById('title')
+var myImage = document.querySelector('img')
+var image_nationalité = document.querySelector('#nationalité')
+var image_equipe = document.querySelector('#equipe')
+var image_ligue = document.querySelector('#ligue')
+var image_role = document.querySelector('#role')
+var myButton = document.querySelector('button')
+
+/*myButton.addEventListener('click', function() {
+    var num = Math.floor(Math.random() * ImgArray.length)
+    myImage.setAttribute('src', 'images/'+ ImgArray[num]);
+    myImage.setAttribute('alt', ImgArray[num]);
+});*/
+
+let size = Joueurs.length
+let rand = Math.floor(Math.random() * size)
+let aDeviner = Joueurs[rand]
+
+function search(ele) {
+    if(event.key === 'Enter') {
+        var nom = ele.value
+        var NOM = nom.toString().toUpperCase()
+        if (NOM in Data){
+            if (Data[NOM][0] === Data[aDeviner][0]){
+                image_nationalité.setAttribute('src', 'images/' + Data[NOM][0] + 'true.png');
+            }else{
+                image_nationalité.setAttribute('src', 'images/' + Data[NOM][0] + 'false.png');
+            }
+            if (Data[NOM][1] === Data[aDeviner][1]){
+                image_equipe.setAttribute('src', 'images/' + Data[NOM][1] + 'true.png');
+            }else{
+                image_equipe.setAttribute('src', 'images/' + Data[NOM][1] + 'false.png');
+            }
+            if (Data[NOM][2] === Data[aDeviner][2]){
+                image_ligue.setAttribute('src', 'images/' + Data[NOM][2] + 'true.png');
+            }else{
+                image_ligue.setAttribute('src', 'images/' + Data[NOM][2] + 'false.png');
+            }
+            if (Data[NOM][3] === Data[aDeviner][3]){
+                image_role.setAttribute('src', 'images/' + Data[NOM][3] + 'true.png');
+            }else{
+                image_role.setAttribute('src', 'images/' + Data[NOM][3] + 'false.png');
+            }
+            if (NOM === aDeviner){
+                myImage.setAttribute('src','images/' + NOM + '.jpg')
+                myTitle.innerHTML = "Bravo!";
+}
+          } else {
+            alert("Le joueur " + NOM + " n'existe pas.");
+          }
+        
+    }
+}
+
+/*'Nationalité :' + (Data[NOM][0] === Data[aDeviner][0])+ ', Equipe :' + (Data[NOM][1] === Data[aDeviner][1])+ ', Ligue :' + (Data[NOM][2] === Data[aDeviner][2])+ ', Role :' + (Data[NOM][3] === Data[aDeviner][3])*/
