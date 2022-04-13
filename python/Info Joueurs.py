@@ -1,0 +1,12 @@
+print('Pseudo')
+pseudo = input()
+print('Nationalité')
+nationalite = input()
+print('Equipe')
+equipe = input()
+print('Ligue')
+ligue = input()
+print('Rôle')
+role = input()
+
+print("'" + pseudo.upper()+ "' : ['" + nationalite.upper() + "','" + equipe.upper() + "','" + ligue.upper() + "','" + role.upper() + "']")
