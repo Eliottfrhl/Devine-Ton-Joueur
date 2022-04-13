@@ -7,8 +7,21 @@
   </head>
   <body>
     <h1 id="'title">Devine le joueur pro !</h1>
+    <nav>
+      <ul>
+        <li class="deroulant"><a href="#">Choisir la Base de donnée &ensp;</a>
+          <ul class="sous">
+            <li onclick="toTopTeams()"><a href="#">Playoffs Spring 2022</a></li>
+            <li onclick="toLFL()"><a href="#">LFL</a></li>
+            <li onclick="toLEC()"><a href="#">LEC</a></li>
+            <li onclick="toLCK()"><a href="#">LCK</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  
     <img src="images\unknown.png" alt="">
-
+    <h2 id="'tentatives">Nombre de tentatives : 0</h2>
     <div class="row">
       <div class="column">
         <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité">
@@ -25,7 +38,7 @@
     </div> 
 
     <input type="text" placeholder="Pseudo du joueur" class="search" onkeydown="search(this)" style="display:block; margin:auto;" >
-    <button onclick="window.location.reload()" class="button" >Prochain joueur</button>
+    <button onclick="next()" class="button" >Nouvelle Partie</button>
 
     <script src="scripts/main.js"></script>
   </body>
