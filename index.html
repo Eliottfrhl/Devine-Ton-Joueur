@@ -1,46 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <title>Devine le joueur pro</title>
-  </head>
-  <body>
-    <h1 id="'title">Devine le joueur pro !</h1>
-    <nav>
-      <ul>
-        <li class="deroulant"><a href="#">Choisir la Base de donnée &ensp;</a>
-          <ul class="sous">
-            <li onclick="toAll()"><a href="#">Tout</a></li>
-            <li onclick="toTopTeams()"><a href="#">Playoffs Spring 2022</a></li>
-            <li onclick="toLFL()"><a href="#">LFL</a></li>
-            <li onclick="toLEC()"><a href="#">LEC</a></li>
-            <li onclick="toLCK()"><a href="#">LCK</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
-  
-    <img src="images\unknown.png" alt="">
-    <h2 id="'tentatives">Nombre de tentatives : 0</h2>
-    <div class="row">
-      <div class="column">
-        <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité">
-      </div>
-      <div class="column">
-        <img src="images\equipe.png" alt="" style="width:70%" id="equipe">
-      </div>
-      <div class="column">
-        <img src="images\ligue.png" alt="" style="width:70%" id="ligue">
-      </div>
-      <div class="column">
-        <img src="images\role.png" alt="" style="width:70%" id="role">
-      </div>
-    </div> 
 
-    <input type="text" placeholder="Pseudo du joueur" class="search" onkeydown="search(this)" style="display:block; margin:auto;" >
-    <button onclick="next()" class="button" >Nouvelle Partie</button>
+<head>
+  <meta charset="utf-8">
+  <link href="styles/style.css" rel="stylesheet" type="text/css">
+  <title>Devine le joueur pro</title>
+</head>
 
-    <script src="scripts/main.js"></script>
-  </body>
+<body>
+  <h1 id="'title">Devine le joueur pro !</h1>
+  <nav>
+    <ul>
+      <li class="deroulant"><a href="#">Choisir la Base de donnée &ensp;</a>
+        <ul class="sous">
+          <li onclick="toAll()"><a href="#">Tout</a></li>
+          <li onclick="toTopTeams()"><a href="#">Playoffs Spring 2022</a></li>
+          <li onclick="toLFL()"><a href="#">LFL</a></li>
+          <li onclick="toLEC()"><a href="#">LEC</a></li>
+          <li onclick="toLCK()"><a href="#">LCK</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <img src="images\unknown.png" alt="" id='imgjoueur'>
+  <h2 id="'tentatives">Nombre de tentatives : 0</h2>
+  <div id='reponses'>
+    <div class="row" id='row1'>
+      <div class="column">
+        <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité1">
+      </div>
+      <div class="column">
+        <img src="images\equipe.png" alt="" style="width:70%" id="equipe1">
+      </div>
+      <div class="column">
+        <img src="images\ligue.png" alt="" style="width:70%" id="ligue1">
+      </div>
+      <div class="column">
+        <img src="images\role.png" alt="" style="width:70%" id="role1">
+      </div>
+    </div>
+    <div class="row" id='row2'>
+      <div class="column">
+        <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité2">
+      </div>
+      <div class="column">
+        <img src="images\equipe.png" alt="" style="width:70%" id="equipe2">
+      </div>
+      <div class="column">
+        <img src="images\ligue.png" alt="" style="width:70%" id="ligue2">
+      </div>
+      <div class="column">
+        <img src="images\role.png" alt="" style="width:70%" id="role2">
+      </div>
+    </div>
+    <div class="row" id='row3'>
+      <div class="column">
+        <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité3">
+      </div>
+      <div class="column">
+        <img src="images\equipe.png" alt="" style="width:70%" id="equipe3">
+      </div>
+      <div class="column">
+        <img src="images\ligue.png" alt="" style="width:70%" id="ligue3">
+      </div>
+      <div class="column">
+        <img src="images\role.png" alt="" style="width:70%" id="role3">
+      </div>
+    </div>
+    <div class="row" id='row4'>
+      <div class="column">
+        <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité4">
+      </div>
+      <div class="column">
+        <img src="images\equipe.png" alt="" style="width:70%" id="equipe4">
+      </div>
+      <div class="column">
+        <img src="images\ligue.png" alt="" style="width:70%" id="ligue4">
+      </div>
+      <div class="column">
+        <img src="images\role.png" alt="" style="width:70%" id="role4">
+      </div>
+    </div>
+    <div class="row" id='row5'>
+      <div class="column">
+        <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité5">
+      </div>
+      <div class="column">
+        <img src="images\equipe.png" alt="" style="width:70%" id="equipe5">
+      </div>
+      <div class="column">
+        <img src="images\ligue.png" alt="" style="width:70%" id="ligue5">
+      </div>
+      <div class="column">
+        <img src="images\role.png" alt="" style="width:70%" id="role5">
+      </div>
+    </div>
+    <div class="row" id='row6'>
+      <div class="column">
+        <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité6">
+      </div>
+      <div class="column">
+        <img src="images\equipe.png" alt="" style="width:70%" id="equipe6">
+      </div>
+      <div class="column">
+        <img src="images\ligue.png" alt="" style="width:70%" id="ligue6">
+      </div>
+      <div class="column">
+        <img src="images\role.png" alt="" style="width:70%" id="role6">
+      </div>
+    </div>
+    <div class="row" id='row7'>
+      <div class="column">
+        <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité7">
+      </div>
+      <div class="column">
+        <img src="images\equipe.png" alt="" style="width:70%" id="equipe7">
+      </div>
+      <div class="column">
+        <img src="images\ligue.png" alt="" style="width:70%" id="ligue7">
+      </div>
+      <div class="column">
+        <img src="images\role.png" alt="" style="width:70%" id="role7">
+      </div>
+    </div>
+    <div class="row" id='row8'>
+      <div class="column">
+        <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité8">
+      </div>
+      <div class="column">
+        <img src="images\equipe.png" alt="" style="width:70%" id="equipe8">
+      </div>
+      <div class="column">
+        <img src="images\ligue.png" alt="" style="width:70%" id="ligue8">
+      </div>
+      <div class="column">
+        <img src="images\role.png" alt="" style="width:70%" id="role8">
+      </div>
+    </div>
+  </div>
+  <input type="text" placeholder="Pseudo du joueur" class="search" onkeydown="search(this)"
+    style="display:block; margin:auto;">
+  <button onclick="next()" class="button">Nouvelle Partie</button>
+
+  <script src="scripts/main.js"></script>
+</body>
+
 </html>
