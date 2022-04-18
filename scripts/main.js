@@ -1,6 +1,10 @@
-Data = { 'CABOCHARD': ['FR', 'KC', 'LFL', 'TOP'], '113': ['TR', 'KC', 'LFL', 'JGL'], 'SAKEN': ['FR', 'KC', 'LFL', 'MID'], 'REKKLES': ['SE', 'KC', 'LFL', 'ADC'], 'HANTERA': ['FR', 'KC', 'LFL', 'SUP'], 'DJOKO': ['FR', 'SLY', 'LFL', 'JGL'], 'STEELBACK': ['FR', 'SLY', 'LFL', 'SUP'], 'EIKA': ['FR', 'LDLC', 'LFL', 'MID'], 'VETHEO': ['FR', 'MSF', 'LEC', 'MID'], 'ODOAMNE': ['ROU', 'RGE', 'LEC', 'TOP'], 'TOUCOUILLE': ['FR', 'FLY', 'LCS', 'MID'], 'CINKROFF': ['POL', 'BDS', 'LEC', 'JGL'], 'FAKER': ['KOR', 'T1', 'LCK', 'MID'], 'KERIA': ['KOR', 'T1', 'LCK', 'SUP'], 'CZEKOLAD': ['POL', 'GW', 'LFL', 'MID'], 'RONALDO': ['ROU', 'GO', 'LFL', 'MID'], 'RANGJUN': ['KOR', 'ME', 'LFL', 'MID'], 'CZAJEK': ['POL', 'MSFP', 'LFL', 'MID'], 'SCARLET': ['AUT', 'SLY', 'LFL', 'MID'], 'XICO': ['PRT', 'BDSA', 'LFL', 'MID'], 'PENG': ['SE', 'OPL', 'LFL', 'MID'], 'DIPLEX': ['DEU', 'VITB', 'LFL', 'MID'], 'BADLULU': ['FR', 'ME', 'LFL', 'TOP'], 'MELONIK': ['POL', 'GW', 'LFL', 'TOP'], 'RAGNER': ['TR', 'LDLC', 'LFL', 'TOP'], 'VIZICSACSI': ['HUN', 'GO', 'LFL', 'TOP'], 'IRRELEVANT': ['DEU', 'MSFP', 'LFL', 'TOP'], 'KIO': ['SVK', 'SLY', 'LFL', 'TOP'], 'SZYGENDA': ['DNK', 'VITB', 'LFL', 'TOP'], 'AGRESIVOO': ['POL', 'BDSA', 'LFL', 'TOP'], 'SKEANZ': ['FR', 'VITB', 'LFL', 'JGL'], 'TYNX': ['DNK', 'MSFP', 'LFL', 'JGL'], 'BRUNESS': ['POL', 'OPL', 'LFL', 'JGL'], 'SHEO': ['FR', 'BDSA', 'LFL', 'JGL'], 'MEMENTO': ['SE', 'ME', 'LFL', 'JGL'], 'YIKE': ['SE', 'LDLC', 'LFL', 'JGL'], 'AKABANE': ['FR', 'GW', 'LFL', 'JGL'], 'KARIMKT': ['FR', 'GO', 'LFL', 'JGL'] }
+Data = {
+    'CABOCHARD': ['FR', 'KC', 'LFL', 'TOP'], '113': ['TR', 'KC', 'LFL', 'JGL'], 'SAKEN': ['FR', 'KC', 'LFL', 'MID'], 'REKKLES': ['SE', 'KC', 'LFL', 'ADC'], 'HANTERA': ['FR', 'KC', 'LFL', 'SUP'], 'DJOKO': ['FR', 'SLY', 'LFL', 'JGL'], 'STEELBACK': ['FR', 'SLY', 'LFL', 'SUP'], 'EIKA': ['FR', 'LDLC', 'LFL', 'MID'], 'VETHEO': ['FR', 'MSF', 'LEC', 'MID'], 'ODOAMNE': ['ROU', 'RGE', 'LEC', 'TOP'], 'TOUCOUILLE': ['FR', 'FLY', 'LCS', 'MID'], 'CINKROFF': ['POL', 'BDS', 'LEC', 'JGL'], 'FAKER': ['KOR', 'T1', 'LCK', 'MID'], 'KERIA': ['KOR', 'T1', 'LCK', 'SUP'], 'CZEKOLAD': ['POL', 'GW', 'LFL', 'MID'], 'RONALDO': ['ROU', 'GO', 'LFL', 'MID'], 'RANGJUN': ['KOR', 'ME', 'LFL', 'MID'], 'CZAJEK': ['POL', 'MSFP', 'LFL', 'MID'], 'SCARLET': ['AUT', 'SLY', 'LFL', 'MID'], 'XICO': ['PRT', 'BDSA', 'LFL', 'MID'], 'PENG': ['SE', 'OPL', 'LFL', 'MID'], 'DIPLEX': ['DEU', 'VITB', 'LFL', 'MID'], 'BADLULU': ['FR', 'ME', 'LFL', 'TOP'], 'MELONIK': ['POL', 'GW', 'LFL', 'TOP'], 'RAGNER': ['TR', 'LDLC', 'LFL', 'TOP'], 'VIZICSACSI': ['HUN', 'GO', 'LFL', 'TOP'], 'IRRELEVANT': ['DEU', 'MSFP', 'LFL', 'TOP'], 'KIO': ['SVK', 'SLY', 'LFL', 'TOP'], 'SZYGENDA': ['DNK', 'VITB', 'LFL', 'TOP'], 'AGRESIVOO': ['POL', 'BDSA', 'LFL', 'TOP'], 'SKEANZ': ['FR', 'VITB', 'LFL', 'JGL'], 'TYNX': ['DNK', 'MSFP', 'LFL', 'JGL'], 'BRUNESS': ['POL', 'OPL', 'LFL', 'JGL'], 'SHEO': ['FR', 'BDSA', 'LFL', 'JGL'], 'MEMENTO': ['SE', 'ME', 'LFL', 'JGL'], 'YIKE': ['SE', 'LDLC', 'LFL', 'JGL'], 'AKABANE': ['FR', 'GW', 'LFL', 'JGL'], 'KARIMKT': ['FR', 'GO', 'LFL', 'JGL'], 'ENJAWVE': ['FR', 'GO', 'LFL', 'SUP'], 'SMILEY': ['SE', 'GO', 'LFL', 'ADC'], 'INNAXE': ['BGR', 'GW', 'LFL', 'ADC'], 'KAMILIUS': ['SVK', 'GW', 'LFL', 'SUP'], 'DOSS': ['DNK', 'LDLC', 'LFL', 'SUP'], 'EXAKICK': ['FR', 'LDLC', 'LFL', 'ADC'],
+    'CODY SUN': ['CAN', 'ME', 'LFL', 'ADC'], 'RAXXO': ['POL', 'ME', 'LFL', 'SUP'], 'WOOLITE': ['POL', 'MSFP', 'LFL', 'ADC'], 'VANDER': ['POL', 'MSFP', 'LFL', 'SUP'], 'ASZA': ['NLD', 'SLY', 'LFL', 'ADC'], 'CROWNSHOT': ['SVN', 'BDSA', 'LFL', 'ADC'], 'ERDOTE': ['POL', 'BDSA', 'LFL', 'SUP'], 'TIGER': ['FR', 'OPL', 'LFL', 'ADC'], 'XICOR': ['TUN', 'OPL', 'LFL', 'ADC'], 'ABSOLUTE': ['TR', 'OPL', 'LFL', 'SUP'], 'JESKLA': ['SE', 'VITB', 'LFL', 'ADC'], 'JACTROLL': ['POL', 'VITB', 'LFL', 'SUP']
+}
     ;
-Joueurs = ['CABOCHARD', '113', 'SAKEN', 'REKKLES', 'HANTERA', 'DJOKO', 'STEELBACK', 'EIKA', 'VETHEO', 'ODOAMNE', 'TOUCOUILLE', 'CINKROFF', 'FAKER', 'KERIA', 'CZEKOLAD', 'RONALDO', 'RANGJUN', 'CZAJEK', 'SCARLET', 'XICO', 'PENG', 'DIPLEX', 'BADLULU', 'MELONIK', 'RAGNER', 'VIZICSACSI', 'IRRELEVANT', 'KIO', 'SZYGENDA', 'AGRESIVOO', 'SKEANZ', 'TYNX', 'BRUNESS', 'SHEO', 'MEMENTO', 'YIKE', 'AKABANE', 'KARIMKT'];
+Joueurs = ['CABOCHARD', '113', 'SAKEN', 'REKKLES', 'HANTERA', 'DJOKO', 'STEELBACK', 'EIKA', 'VETHEO', 'ODOAMNE', 'TOUCOUILLE', 'CINKROFF', 'FAKER', 'KERIA', 'CZEKOLAD', 'RONALDO', 'RANGJUN', 'CZAJEK', 'SCARLET', 'XICO', 'PENG', 'DIPLEX', 'BADLULU', 'MELONIK', 'RAGNER', 'VIZICSACSI', 'IRRELEVANT', 'KIO', 'SZYGENDA', 'AGRESIVOO', 'SKEANZ', 'TYNX', 'BRUNESS', 'SHEO', 'MEMENTO', 'YIKE', 'AKABANE', 'KARIMKT', 'ENJAWVE', 'SMILEY', 'INNAXE', 'KAMILIUS', 'DOSS', 'EXAKICK',
+    'CODY SUN', 'RAXXO', 'WOOLITE', 'VANDER', 'ASZA', 'CROWNSHOT', 'ERDOTE', 'TIGER', 'XICOR', 'ABSOLUTE', 'JESKLA', 'JACTROLL'];
 
 var myTitle = document.getElementById('title')
 var myImage = document.querySelector('img')
@@ -13,7 +17,9 @@ var myTentatives = document.querySelector('#tentatives')
 
 window.onload = delimg()
 
+
 function delimg() {
+    compteur = 0
     document.getElementById("nationalité1").setAttribute('src', "images\\nationalité.png");
     document.getElementById("equipe1").setAttribute('src', "images\\equipe.png");
     document.getElementById("ligue1").setAttribute('src', "images\\ligue.png");
@@ -54,7 +60,7 @@ function toTopTeams() {
 }
 
 function toLFL() {
-    Joueurs = ['CABOCHARD', '113', 'SAKEN', 'REKKLES', 'HANTERA', 'DJOKO', 'STEELBACK', 'EIKA', 'CZEKOLAD', 'RONALDO', 'RANGJUN', 'CZAJEK', 'SCARLET', 'XICO', 'PENG', 'DIPLEX', 'BADLULU', 'MELONIK', 'RAGNER', 'VIZICSACSI', 'IRRELEVANT', 'KIO', 'SZYGENDA', 'AGRESIVOO', 'SKEANZ', 'TYNX', 'BRUNESS', 'SHEO', 'MEMENTO', 'YIKE', 'AKABANE', 'KARIMKT']
+    Joueurs = ['CABOCHARD', '113', 'SAKEN', 'REKKLES', 'HANTERA', 'DJOKO', 'STEELBACK', 'EIKA', 'CZEKOLAD', 'RONALDO', 'RANGJUN', 'CZAJEK', 'SCARLET', 'XICO', 'PENG', 'DIPLEX', 'BADLULU', 'MELONIK', 'RAGNER', 'VIZICSACSI', 'IRRELEVANT', 'KIO', 'SZYGENDA', 'AGRESIVOO', 'SKEANZ', 'TYNX', 'BRUNESS', 'SHEO', 'MEMENTO', 'YIKE', 'AKABANE', 'KARIMKT', 'ENJAWVE', 'SMILEY', 'INNAXE', 'KAMILIUS', 'DOSS', 'EXAKICK', 'CODY SUN', 'RAXXO', 'WOOLITE', 'VANDER', 'ASZA', 'CROWNSHOT', 'ERDOTE', 'TIGER', 'XICOR', 'ABSOLUTE', 'JESKLA', 'JACTROLL']
     var size = Joueurs.length
     var rand = Math.floor(Math.random() * size)
     aDeviner = Joueurs[rand]
@@ -120,6 +126,9 @@ function search(ele) {
                 if (NOM === aDeviner) {
                     myImage.setAttribute('src', 'images/' + NOM + '.jpg')
                     myTitle.innerHTML = "Bravo!"; /* marche pas*/
+                } else {
+                    var stgcompteur = compteur.toString()
+                    document.getElementById("tries-value").innerHTML = stgcompteur;
                 }
             } else {
                 alert("Le joueur " + NOM + " n'existe pas.");
@@ -128,5 +137,4 @@ function search(ele) {
     }
 }
 
-var stgcompteur = compteur.toString()
-document.getElementById("myTentatives").innerHTML = "New text!";/*'Nationalité :' + (Data[NOM][0] === Data[aDeviner][0])+ ', Equipe :' + (Data[NOM][1] === Data[aDeviner][1])+ ', Ligue :' + (Data[NOM][2] === Data[aDeviner][2])+ ', Role :' + (Data[NOM][3] === Data[aDeviner][3])*/
+/*'Nationalité :' + (Data[NOM][0] === Data[aDeviner][0])+ ', Equipe :' + (Data[NOM][1] === Data[aDeviner][1])+ ', Ligue :' + (Data[NOM][2] === Data[aDeviner][2])+ ', Role :' + (Data[NOM][3] === Data[aDeviner][3])*/
