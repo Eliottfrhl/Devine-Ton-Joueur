@@ -137,4 +137,25 @@ function search(ele) {
     }
 }
 
+function ac(value) {
+    document.getElementById('datalist').innerHTML = '';
+    //setting datalist empty at the start of function
+    //if we skip this step, same name will be repeated
+    var n = Joueurs.length;
+    l = value.length;
+    //input query length
+    for (var i = 0; i < n; i++) {
+        if (((Joueurs[i].toLowerCase()).indexOf(value.toLowerCase())) > -1) {
+            //comparing if input string is existing in tags[i] string
+
+            var node = document.createElement("option");
+            var val = document.createTextNode(Joueurs[i]);
+            node.appendChild(val);
+
+            document.getElementById("datalist").appendChild(node);
+            //creating and appending new elements in data list
+        }
+    }
+}
+
 /*'Nationalité :' + (Data[NOM][0] === Data[aDeviner][0])+ ', Equipe :' + (Data[NOM][1] === Data[aDeviner][1])+ ', Ligue :' + (Data[NOM][2] === Data[aDeviner][2])+ ', Role :' + (Data[NOM][3] === Data[aDeviner][3])*/

@@ -140,7 +140,8 @@
     </div>
   </div>
   <input type="text" placeholder="Pseudo du joueur" class="search" onkeydown="search(this)"
-    style="display:block; margin:auto;">
+    style="display:block; margin:auto;" list="datalist" onkeyup="ac(this.value)">
+  <datalist id="datalist"></datalist>
   <button onclick="next()" class="button">Nouvelle Partie</button>
 
   <script src="scripts/main.js"></script>
