@@ -25,22 +25,32 @@
 
   <img src="images\unknown.png" alt="" id='imgjoueur'>
   <h2 id="tries">Number of tries : <span id="tries-value">0</span></h2>
+  <input type="text" placeholder="Pseudo du joueur" class="search" onkeydown="search(this)"
+    style="display:block; margin:auto;" list="datalist" onkeyup="ac(this.value)">
+  <datalist id="datalist"></datalist>
   <div id='reponses'>
     <div class="row" id='row1'>
-      <div class="column">
+      <div class="column" id='column1.1'>
+        <h2 id='joueur1'></h2>
+      </div>
+      <div class="column" id='column1.2'>
         <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité1">
       </div>
-      <div class="column">
+      <div class="column" id='column1.3'>
         <img src="images\equipe.png" alt="" style="width:70%" id="equipe1">
       </div>
-      <div class="column">
+      <div class="column" id='column1.4'>
         <img src="images\ligue.png" alt="" style="width:70%" id="ligue1">
       </div>
-      <div class="column">
+      <div class="column" id='column1.5'>
         <img src="images\role.png" alt="" style="width:70%" id="role1">
       </div>
     </div>
     <div class="row" id='row2'>
+      <div class="column">
+        <h2 id='joueur2'></h2>
+      </div>
+
       <div class="column">
         <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité2">
       </div>
@@ -56,6 +66,10 @@
     </div>
     <div class="row" id='row3'>
       <div class="column">
+        <h2 id='joueur3'></h2>
+      </div>
+
+      <div class="column">
         <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité3">
       </div>
       <div class="column">
@@ -69,6 +83,10 @@
       </div>
     </div>
     <div class="row" id='row4'>
+      <div class="column">
+        <h2 id='joueur4'></h2>
+      </div>
+
       <div class="column">
         <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité4">
       </div>
@@ -84,6 +102,10 @@
     </div>
     <div class="row" id='row5'>
       <div class="column">
+        <h2 id='joueur5'></h2>
+      </div>
+
+      <div class="column">
         <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité5">
       </div>
       <div class="column">
@@ -97,6 +119,10 @@
       </div>
     </div>
     <div class="row" id='row6'>
+      <div class="column">
+        <h2 id='joueur6'></h2>
+      </div>
+
       <div class="column">
         <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité6">
       </div>
@@ -112,6 +138,10 @@
     </div>
     <div class="row" id='row7'>
       <div class="column">
+        <h2 id='joueur7'></h2>
+      </div>
+
+      <div class="column">
         <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité7">
       </div>
       <div class="column">
@@ -126,6 +156,10 @@
     </div>
     <div class="row" id='row8'>
       <div class="column">
+        <h2 id='joueur8'></h2>
+      </div>
+
+      <div class="column">
         <img src="images\nationalité.png" alt="" style="width:70%" id="nationalité8">
       </div>
       <div class="column">
@@ -139,9 +173,7 @@
       </div>
     </div>
   </div>
-  <input type="text" placeholder="Pseudo du joueur" class="search" onkeydown="search(this)"
-    style="display:block; margin:auto;" list="datalist" onkeyup="ac(this.value)">
-  <datalist id="datalist"></datalist>
+
   <button onclick="next()" class="button">Nouvelle Partie</button>
 
   <script src="scripts/main.js"></script>
